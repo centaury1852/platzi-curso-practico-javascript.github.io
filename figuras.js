@@ -1,21 +1,32 @@
 // Código del cuadrado
 
-console.group("Cuadrados");
+/*console.group("Cuadrados");
 
 const ladoCuadrado = 5;
 console.log("los lados del cuadrado miden:" + ladoCuadrado + "cm" );
 
-const perimetroCuadrado = ladoCuadrado * 4;
+/*const perimetroCuadrado = ladoCuadrado * 4;
 console.log("El perimetro del cuadrado es:" + perimetroCuadrado + "cm");
+*/
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
+/*const areaCuadrado = ladoCuadrado * ladoCuadrado;
 console.log("El area del cuadrado es:" + areaCuadrado + "cm^2");
+*/
+/*console.groupEnd();*/
 
-console.groupEnd();
+// funciones del Cuadrado
+function perimetroCuadrado(lado){
+    return lado * 4 + "cm";
+}
+
+function areaCuadrado(lado) {
+    return lado * lado + "cm^2";
+}
+
 
 // Código del trinángulo
 
-console.group("Triángulos");
+/*console.group("Triángulos");
 
 const ladoTriangulo1 = 6;
 const ladoTriangulo2 = 6;
@@ -40,7 +51,22 @@ const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
 console.log( "El área del triángulo es:" + areaTriangulo + "cm^2");
 
 
-console.groupEnd();
+console.groupEnd();*/
+
+//funciones del Triángulo
+
+//cuando construimos la funcion, los valores son llamados parametros.
+//cuando llamamos la funcion, los datos son llamados argumentos.
+function perimetroTriangulo(lado1, lado2, base){
+return lado1 + lado2 + base;
+
+}
+
+function areaTriangulo(base, altura){
+return (base * altura)/2;
+}
+
+
 
 // Código del círculo
 
@@ -70,3 +96,5 @@ console.groupEnd();
 
 //fin del ejercicio
     
+
+//funciones del círculo
