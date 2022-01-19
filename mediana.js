@@ -1,13 +1,18 @@
 const lista1 = [
-    100,
+    400,
     200,
-    500,
+    4000,
+    600,
     800,
-    400000000,
+    40000000,
 ];
 
 const mitadListaUno = parseInt(lista1.length/ 2);
 
+
+lista1.sort(function(a, b){
+    return a -  b;
+});
 
 function esPar(numeroprueba){
     if (numeroprueba % 2 === 0){
@@ -18,48 +23,34 @@ function esPar(numeroprueba){
 };
 
 
-let mediana = lista1[mitadListaUno];
-
-/*
-if (esPar(lista1.length)) {
-
-    
-} else {
-    mediana = lista1[mitadListaUno];
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function calcularPromedio(lista){
-
-    /*let sumaLista = 0;
-
-    for (let i = 0; i <lista.length; i++) {
-    sumaLista = sumaLista + lista[i];
-}*/
-
-//alternativa a ciclo for --> metodos de arrays
     const sumaLista = lista.reduce(
         function (valorAcumulado = 0, nuevoElemento) {
             return valorAcumulado + nuevoElemento;
         }
-
     )
 
-const promedioLista = sumaLista / lista.length;
-    return promedioLista;
+    const promedioLista = sumaLista / lista.length;
+            return promedioLista;
 };
+
+
+let mediana = lista1[mitadListaUno];
+
+
+if (esPar(lista1.length)) {
+
+    elemento1 = lista1[mitadListaUno - 1 ];
+    elemento2 = lista1[mitadListaUno];
+    
+    const promedioElemento1y2 = calcularPromedio([ elemento1, elemento2,]);
+
+    mediana = promedioElemento1y2;
+} else {
+    mediana = lista1[mitadListaUno];
+}
+    
+
 
