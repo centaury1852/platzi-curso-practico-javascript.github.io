@@ -1,21 +1,45 @@
+
+
+
+
+/*let lista = [];
+
+lista.push({
+    name: "Fernando",
+    salary: 1000000,
+});*/
+
+
+//se crea un array que almacene los datos especificos de un pais.
+
+
+//puedes hacerlo manual, creando un objeto dentro del array.
+
+//encambio se crea el array y se deja vacio,
+//se crea un .push() que ingrese automaticamente los datos
+//en el cual creamos cada elemento y lo definimos.
+
+
+
+
 //calcular el promedio
 //es igual a la suma total de los elementos dividido entre sus elementos
 
 
 //se crea un array con numeros como ejemplo.
-const lista1 = [
+/*const lista1 = [
     1,
     2,
     3,
     4,
     5,
     6,
-];
+];*/
 
 
 //declarar variable sumarLista1 en 0, para empezar a almacenar la suma de los elementos del array.
 
-let sumaLista1 = 0;
+//let sumaLista1 = 0;
 
 
 //se hace un ciclo y se itera desde i = 0 //seguir la logica del ciclo// lo cual debe ser almacenado en la variable antes inicializada,
@@ -24,14 +48,14 @@ let sumaLista1 = 0;
 //cada vez que se genere el ciclo, este se guardara en la variable sumarLista1. y aqui se le sumara el valor acumulado más el ultimo valor agregado,
 //asi hasta sumar todos los elementos o como tambien se podria decir, hasta que la condicion del ciclo no se cumpla; sea false. 
 
-for (let i = 0; i <lista1.length; i++) {
+/*for (let i = 0; i <lista1.length; i++) {
     sumaLista1 = sumaLista1 + lista1[i];
-}
+}*/
 
 
 //luego declaramos una nueva variable que almacenara el resultado entre la variable anterior sumarLista1 / lista1.length, que es igual a dividir la
 //suma de todos los elementos entre el total de elementos del array lista1.
-const promedioLista1 = sumaLista1 / lista1.length;
+//const promedioLista1 = sumaLista1 / lista1.length;
 
 
 //ahora con base al establecimiento de la funcion de ejemplo se desarrolla una funcion nueva que reciba cualquier valor nuevo.
@@ -48,3 +72,19 @@ function calcularPromedio(lista){
         const promedioLista = sumaLista / lista.length;
     return promedioLista;
 };
+
+
+
+
+function resultadoPromedioDisplay(){
+    let inputGeneral = document.getElementById("InputGeneral");
+    let valorInputGeneral = inputGeneral.value;
+
+    let valorInputadherido = Array.from(valorInputGeneral.split(','),Number);
+    let promedio = calcularPromedio(valorInputadherido);
+    
+    let resultadoAImprimir = document.getElementById("resultadoPromedio");
+    resultadoAImprimir.innerText = "El valor promedio de los datos que ingresaste es de : " + promedio +".";
+}
+
+

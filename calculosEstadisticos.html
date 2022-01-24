@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integracion Taller 3 | Curso práctico JavaScript</title>
+    <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+<body>
+    <header>
+
+        <h1>
+            En esta p&aacute;gina podr&aacute;s calcular promedio, mediana y moda.
+        </h1>
+
+        <p>
+            Este es el tercer taller del Curso Práctico de JavaScript, el cual consultar tus calculos de promedio, media y moda.
+        </p>
+    </header>
+
+    <section>
+        <h2>Calcula el Promedio, Mediana y Moda de los valores:</h2>
+            <div>
+                <h3>¿Qu&eacute; es Promedio &oacute; Media Ar&iacute;metica, Mediana y Moda?</h3>
+
+                <p>Promedio es el resultado que se obtiene al dividir la suma de varias cantidades por el n&uacute;mero de sumandos. </p>
+        
+                <p>La mediana representa el valor de la variable de posici&oacute; n central en un conjunto de datos ordenados. Se le denota mediana.</p>
+                
+                <p>La moda es el valor que aparece con mayor frecuencia en un conjunto de datos.</p>
+
+                </h3>
+            </div>
+
+
+
+            <div class="calculosEstadisticos">
+                <form action="">
+            
+                    <label class="ingreso" for="InputGeneral" >Escribe tus valores aqu&iacute; para calcular Promedio, Media o Moda: </label>
+                    
+                    <input class= "ventana" id="InputGeneral" type="text" placeholder="Ej. 6,5,7">
+                    
+                           
+                    <button type="button" onclick="resultadoPromedioDisplay()"> Promedio</button>
+    
+                    <button type="button" onclick="resultadoMedianaDisplay()"> Mediana</button>
+                    
+                    <button type="button" onclick="resultadoModaDisplay()"> Moda</button>
+                    
+                    <Button type="">Recargar página</Button>
+                    <p id="resultadoPromedio" ></p>
+                    <p id="resultadoMediana" ></p>
+                    <p id="resultadoModa" ></p>
+
+                
+                </form>
+            </div>
+         </section>
+
+
+
+
+    <script src="./promedio.js"> </script>
+    <script src="./mediana.js"></script>
+    <script src="./moda.js"></script>
+   
+    
+</body>
+</html>

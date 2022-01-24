@@ -24,6 +24,21 @@ function calcularPrecioConDescuento (precio, descuento) {
     return precioConDescuento;
 };
 
+
+//creamos la funcion para escribir en html
+// se crea una variable que reciba la info basandose en el ID
+//luego la almacene en priceValue para poder obtener el valor de inputPrice
+//este ingreso es de entrada de precio
+
+//luego se crea otra variable que reciba el valor de descuento
+
+//se crea la variable precioConDescuento que almacenara el resultado de la funcion, luedo
+//de extraer pricevalue y discountValue.
+
+
+//para finalizar creamos una variable que señale a P en html por medio de su id.
+//y luego que imprima basandose en el id y en la funcion/atributo innerText
+//como resultado imprimira el texto que le ingresemos entre "...".S
 function onClickButtonPriceDiscount (){
     const inputPrice = document.getElementById("InputPrice");
     const priceValue = inputPrice.value;

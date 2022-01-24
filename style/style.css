@@ -1,0 +1,72 @@
+
+
+body{
+            margin: 25px;
+            background-color: black; 
+            ;
+        }
+        
+        
+        header{
+            background-color: rgb(250, 150, 0.6); 
+         
+        }
+
+        header > h1{
+            text-align:center;
+        }
+
+        section{
+            color: aliceblue;
+        }
+
+        section{
+            display: block;
+        }
+
+        form{
+            display: block;
+        }
+        
+        section .ingreso{
+            display: block;
+            padding: 5px;
+            margin: 15px;
+            border: 15px;
+        }
+
+        section .ventana{
+            display: block;
+            justify-content: center;
+            padding: 15px 0 15px 0;
+            margin: 20px 15px 50px 150px;
+            
+        }
+        section button{
+            display: inline-block;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px 20px 20px 50px;
+            border-radius: 8px;
+            border-color: brown;
+            
+            
+        }
+
+        form .agregarDatos{
+            display: block;
+            align-items: center;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            border-color: brown;
+
+        }
+
+        div{
+            justify-content: center;
+            padding: 15px;
+            margin: 15px;
+            border: 15px;
+            
+        }

@@ -60,3 +60,19 @@ function calcularMediana(lista){
 };
 
 //importante, siempre return dentro de una funcion para que quede definida su acción.
+
+
+//diseñando funcion para boton
+
+
+function resultadoMedianaDisplay(){
+    let inputGeneral = document.getElementById("InputGeneral");
+    let valorInputGeneral = inputGeneral.value;
+
+    let valorInputadherido = Array.from(valorInputGeneral.split(','),Number);
+    let mediana = calcularMediana(valorInputadherido);
+    
+    let resultadoAImprimir = document.getElementById("resultadoMediana");
+    resultadoAImprimir.innerText = "La mediana de los datos que ingresaste es de : " + mediana +".";
+}
+

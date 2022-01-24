@@ -124,3 +124,7 @@ name: "Suru",
 salary: 1200000,
 });
 
+colombia.push({
+    name: "Cappa",
+    salary: 1210000,
+    });
