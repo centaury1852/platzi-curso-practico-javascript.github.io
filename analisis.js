@@ -179,6 +179,12 @@ console.log({
     medianaTop10Col,
 });
 
+var a = “hello”;
+var b = “world”;
+var frase = a +” “+ b;
+console.log(frase);
+var frase2 = `${a}` `${b}`;
+console.log(frase2);
 
 
 
